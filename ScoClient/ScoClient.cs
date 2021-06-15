@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using doob.Reflectensions.Common;
 using doob.ScoClient.Helper;
 using doob.ScoClient.Models;
 using Flurl;
 using Flurl.Http;
-using Reflectensions.ExtensionMethods;
+
 
 namespace doob.ScoClient
 {

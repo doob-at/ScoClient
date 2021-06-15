@@ -4,7 +4,8 @@ using System.Linq;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
-using Reflectensions.ExtensionMethods;
+using doob.Reflectensions.ExtensionMethods;
+
 
 namespace doob.ScoClient.Helper
 {
@@ -164,7 +165,7 @@ namespace doob.ScoClient.Helper
             if (el == null)
                 return null;
 
-            return el.To<bool>();
+            return el.Reflect().To<bool>();
         }
 
         public SimpleXmlElement[] SelectElements()
