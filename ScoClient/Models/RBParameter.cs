@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using doob.ScoClient.Helper;
 using Reflectensions.ExtensionMethods;
-using SCO.Helper;
 
-namespace SCO.Models
+namespace doob.ScoClient.Models
 {
     public class Parameter
     {

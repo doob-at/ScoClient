@@ -2,25 +2,24 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Net;
 using System.Threading.Tasks;
+using doob.ScoClient.Helper;
+using doob.ScoClient.Models;
 using Flurl;
 using Flurl.Http;
 using Reflectensions.ExtensionMethods;
-using SCO.Helper;
-using SCO.Models;
 
-namespace SCO
+namespace doob.ScoClient
 {
-    public class ScoClient
+    public class SCOClient
     {
         public ClientOptions Options { get; }
-        public ScoClient(string baseUrl)
+        public SCOClient(string baseUrl)
         {
             Options = new ClientOptionsBuilder().WithBaseUrl(baseUrl);
         }
 
-        public ScoClient(string baseUrl, Action<ClientOptionsBuilder> options)
+        public SCOClient(string baseUrl, Action<ClientOptionsBuilder> options)
         {
             var opts = new ClientOptions();
             opts.BaseUrl = baseUrl;
@@ -300,7 +299,7 @@ namespace SCO
 
         private string GetFromResources(string resourceName)
         {
-            using (Stream stream = this.GetType().Assembly.GetManifestResourceStream($"SCO.Templates.{resourceName}"))
+            using (Stream stream = this.GetType().Assembly.GetManifestResourceStream($"ScoClient.Templates.{resourceName}"))
             {
                 using (var reader = new StreamReader(stream))
                 {

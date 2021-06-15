@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace SCO.Models
+namespace doob.ScoClient.Models
 {
     public class StartRunbookRequest
     {

@@ -6,7 +6,7 @@ using System.Xml.Linq;
 using System.Xml.XPath;
 using Reflectensions.ExtensionMethods;
 
-namespace SCO.Helper
+namespace doob.ScoClient.Helper
 {
    
 

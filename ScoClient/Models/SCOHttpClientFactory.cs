@@ -1,7 +1,7 @@
 ﻿using System.Net.Http;
 using Flurl.Http.Configuration;
 
-namespace SCO.Models
+namespace doob.ScoClient.Models
 {
     public class SCOHttpClientFactory: DefaultHttpClientFactory
     {

@@ -5,7 +5,7 @@ using Newtonsoft.Json.Linq;
 using Reflectensions;
 using Scriban.Runtime;
 
-namespace SCO
+namespace doob.ScoClient
 {
     public static class TemplateParser
     {

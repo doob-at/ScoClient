@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net;
-using System.Text;
+﻿using System.Net;
 
-namespace SCO
+namespace doob.ScoClient
 {
     public class ClientOptions
     {

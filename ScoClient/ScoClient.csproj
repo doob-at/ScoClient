@@ -1,9 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net472</TargetFrameworks>
-    <RootNamespace>SCO</RootNamespace>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>net5.0;netstandard2.0;net472</TargetFrameworks>
+		<AssemblyName>doob.ScoClient</AssemblyName>
+		<RootNamespace>doob.ScoClient</RootNamespace>
+		<LangVersion>9</LangVersion>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Authors>Bernhard Windisch</Authors>
+		<Company>-</Company>
+		<Description></Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/doob-at/ScoClient</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/doob-at/ScoClient</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageId>doob.ScoClient</PackageId>
+		<Product>doob.ScoClient</Product>
+	</PropertyGroup>
+
 
   <ItemGroup>
     <None Remove="Templates\StartRunbook.xml" />
