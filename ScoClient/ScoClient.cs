@@ -300,7 +300,7 @@ namespace doob.ScoClient
 
         private string GetFromResources(string resourceName)
         {
-            using (Stream stream = this.GetType().Assembly.GetManifestResourceStream($"ScoClient.Templates.{resourceName}"))
+            using (Stream stream = this.GetType().Assembly.GetManifestResourceStream($"doob.ScoClient.Templates.{resourceName}"))
             {
                 using (var reader = new StreamReader(stream))
                 {
